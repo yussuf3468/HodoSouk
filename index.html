@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-KE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5f3f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!--head:start-->
+    <title>Hodo Souk — Office Spaces &amp; Residential Living in Eastleigh, Nairobi</title>
+    <meta
+      name="description"
+      content="Hodo Souk is a mixed-use building on Major Muriithi Street, Eastleigh, Nairobi, offering commercial office space and residential accommodation."
+    />
+    <!--head:end-->
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/manrope-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/outfit-latin.woff2" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- Apply the saved (or system) theme before first paint, so a
+         prerendered page never flashes the wrong colours. -->
+    <script>
+      (function (d, w) {
+        try {
+          var t = localStorage.getItem('hodo-theme');
+          var dark = t ? t === 'dark' : w.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (dark) d.documentElement.classList.add('dark');
+        } catch (e) {}
+      })(document, window);
+    </script>
+  </head>
+
+  <body>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
+  </body>
+</html>

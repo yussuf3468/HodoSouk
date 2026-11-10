@@ -1,0 +1,47 @@
+{
+  "name": "hodo-souk",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Hodo Souk — commercial office spaces and residential accommodation on Major Muriithi Street, Eastleigh, Nairobi.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "check": "npm run typecheck && npm run lint",
+    "images": "node scripts/images.mjs",
+    "fonts": "node scripts/fonts.mjs",
+    "icons": "node scripts/icons.mjs",
+    "og": "node scripts/og.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^12.43.0",
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router": "^7.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource-variable/outfit": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.5.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^7.3.8"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+!.env.example
+.vercel
+*.log
+.DS_Store
+Thumbs.db
+
+# Camera originals are kept out of the repo by default (they are large and may
+# carry GPS metadata). The optimised derivatives in public/images ARE committed.
+media-originals/**/*
+!media-originals/README.md
